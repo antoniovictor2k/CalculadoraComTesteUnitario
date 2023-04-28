@@ -1,12 +1,15 @@
 var numero1 = document.getElementById('numero1');
 var numero2 = document.getElementById('numero2');
+var resultadoDoCalculo = document.getElementById('resultadoDoCalculo');
+
 
 console.log('Antes da Somar');
 function soma(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
     console.log('Durante a Somar')
-    return console.log(a + b)
+    console.log(a+b);
+    return resultadoDoCalculo.innerHTML= a + b 
     
 };
 console.log('Depois da somar');
