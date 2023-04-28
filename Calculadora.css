@@ -17,3 +17,7 @@ h1{
     text-align: center;
     align-items: center;
 }
+
+.butoesCalculadora{
+    border: solid 1px #ff0000;
+}
