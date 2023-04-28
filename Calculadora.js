@@ -43,16 +43,16 @@ function divisao(a, b) {
 divisao(5, 5);
 console.log('Depois da Divisao');
 
-console.log('Antes da Somar');
-function somar(a, b) {
+console.log('Antes da expoente');
+function expoente(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
-    console.log('Durante a Somar')
-    return console.log(a + b)
+    console.log('Durante a expoente')
+    return console.log(a ** b)
 
 };
-somar(5, 5);
-console.log('Depois da somar');
+expoente(5, 5);
+console.log('Depois da expoente');
 
 console.log('Antes da Somar');
 function somar(a, b) {
