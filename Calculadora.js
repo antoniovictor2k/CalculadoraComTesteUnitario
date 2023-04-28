@@ -14,36 +14,39 @@ function soma(a, b) {
 };
 console.log('Depois da somar');
 console.log('Antes da Subtração');
-function subtração(a, b) {
+function subtrair(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
-    console.log('Durante a Subtração')
-    return console.log(a - b)
+    console.log(a-b);
+    return resultadoDoCalculo.innerHTML= a - b 
 
 };
-subtração(5, 5);
+subtrair(5, 5);
 console.log('Depois da Subtração');
 
 console.log('Antes da Multiplicação');
-function multiplicacao(a, b) {
+function multiplicar(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
-    console.log('Durante a Multiplicação')
-    return console.log(a * b)
-    
+    console.log(a*b);
+    return resultadoDoCalculo.innerHTML= a * b 
+
 };
-multiplicacao(5, 5);
+multiplicar(5, 5);
 console.log('Depois da Multiplicação');
 
 console.log('Antes da Divisao');
-function divisao(a, b) {
+function dividir(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
-    console.log('Durante a Divisao')
-    return console.log(a / b)
+    console.log(a/b);
+  if (b == 0) {
+    return resultadoDoCalculo.innerHTML = 'Não é Possivel dividir Por 0'
+  }
+    return resultadoDoCalculo.innerHTML= a / b 
 
 };
-divisao(5, 5);
+// dividir(5, 5);
 console.log('Depois da Divisao');
 
 console.log('Antes da expoente');
