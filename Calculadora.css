@@ -1,0 +1,19 @@
+body{
+    background-color: #303030;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+h1{
+    text-align: center;
+}
+
+.containerCalculadora{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
