@@ -37,8 +37,6 @@ function dividir(a, b) {
 
 };
 
-
-console.log('Antes da expoente');
 function expoente(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
@@ -46,17 +44,28 @@ function expoente(a, b) {
     return resultadoDoCalculo.innerHTML= a ** b 
 
 };
-expoente(5, 5);
 
-console.log('Depois da expoente');
 
-console.log('Antes da Somar');
-function somar(a, b) {
+console.log('Antes da Impar ou Par');
+function verificarImparPar(a, b) {
     var a = Number( numero1.value);
     var b = Number( numero2.value);
-    console.log('Durante a Somar')
-    return console.log(a + b)
+    a=5;
+    b=4;
+    var somaAB = a+b
+    console.log('Durante a Impar ou Par')
+    if (somaAB %2==0) {
+        return console.log(somaAB +' é Par')
+    } 
+     else if(somaAB %2==1) {
+      
+        console.log("Else IF full")
+    }
+    else{
+        console.log('else full')
+    }
+    // return console.log(a + b)
 
 };
-somar(5, 5);
-console.log('Depois da somar');
+ verificarImparPar(5, 5);
+console.log('Depois da Impar ou Par');
