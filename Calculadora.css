@@ -1,14 +1,15 @@
-body{
+body {
     background-color: #303030;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
-.containerCalculadora{
+.containerCalculadora {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -16,9 +17,17 @@ h1{
     justify-items: center;
     text-align: center;
     align-items: center;
+
 }
 
-.butoesCalculadora{
+.cardCalculadora {
+    background-color: #225D70;
+    border-radius: 12px;
+    width: 350px;
+    height: 350px;
+}
+
+.butoesCalculadora {
     border: solid 1px #ff0000;
     width: 350px;
 }

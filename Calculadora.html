@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,38 +8,44 @@
     <link rel="stylesheet" href="Calculadora.css">
     <title>Calculadora JEVA</title>
 </head>
+
 <body>
     <h1>
-        Calculadora 
+        Calculadora
     </h1>
 
-<div class="containerCalculadora">
-        <pre id="resultadoDoCalculo">oi</pre>
-        <input type="number" placeholder="Digite o Primeiro Número" name="numero1" id="numero1">
-         <input type="number" placeholder="Digite o Segundo Número" name="numero2" id="numero2">  
-         
-   
-    <div class="butoesCalculadora">
+    <div class="containerCalculadora">
 
-<button onclick="soma()">Soma</button>
-<button onclick="subtrair()">Subtrair</button>
-<button onclick="multiplicar()">Multiplicar</button>
-<button onclick="dividir()">Dividir</button>
-<button onclick="expoente()">Expoente</button>
-<button>expoente</button>
-<button>expoente</button>
-<button>expoente</button>
-<button>expoente</button>
-<button>expoente</button>
-<button>expoente</button>
+        <div class="cardCalculadora">
 
+            <pre id="resultadoDoCalculo">00</pre>
+
+            <input type="number" placeholder="Digite o Primeiro Número" name="numero1" id="numero1">
+            <input type="number" placeholder="Digite o Segundo Número" name="numero2" id="numero2">
+
+
+            <div class="butoesCalculadora">
+
+                <button onclick="soma()">Soma</button>
+                <button onclick="subtrair()">Subtrair</button>
+                <button onclick="multiplicar()">Multiplicar</button>
+                <button onclick="dividir()">Dividir</button>
+                <button onclick="expoente()">Expoente</button>
+                <button onclick="fatorial()">Fatorial</button>
+                <button onclick="raizquadrada()">Raiz</button>
+                <button>Primo</button>
+                <button onclick="verificarImparPar()">Primo/Par</button>
+
+
+            </div>
+
+
+        </div>
     </div>
-
-
-</div>
 
 
 
     <script src="Calculadora.js"></script>
 </body>
+
 </html>
