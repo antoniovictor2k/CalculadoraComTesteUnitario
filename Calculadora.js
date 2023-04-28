@@ -89,4 +89,27 @@ function fatorial(a, b) {
 
 };
 
+// Não funcionando...
 
+console.log('Inincio teste numero primo');
+
+
+
+function numeroPrimo(num) {
+    console.log('Startando teste numero primo');
+    for (var i = 2; i < num; i++) {
+        if(num % i === 0) {
+            
+            // return false;
+        }
+        
+        
+    }
+    if (true){
+        console.log('nnnnnnnn')
+    }
+    return num !== 1;  
+  }
+  console.log( numeroPrimo(1) );
+
+console.log('fim de teste numero primo');
