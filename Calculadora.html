@@ -18,13 +18,20 @@
 
         <div class="cardCalculadora">
 
-            <pre id="resultadoDoCalculo">00</pre>
+            <div class="telaResultado">
+                <p>Resultado do Calculo</p>
+                <pre id="resultadoDoCalculo">04645646654640</pre>
+            </div>
 
-            <input type="number" placeholder="Digite o Primeiro Número" name="numero1" id="numero1">
-            <input type="number" placeholder="Digite o Segundo Número" name="numero2" id="numero2">
+<div class="inputsCalculadora">
+    <input type="number" placeholder="Digite o Primeiro Número" name="numero1" id="numero1">
+    <input type="number" placeholder="Digite o Segundo Número" name="numero2" id="numero2">
+</div>
 
-
-            <div class="butoesCalculadora">
+<div class="limparResultado">
+    <button onclick="limparCalculo()">C</button>
+</div>
+<div class="butoesCalculadora">
 
                 <button onclick="soma()">Soma</button>
                 <button onclick="subtrair()">Subtrair</button>

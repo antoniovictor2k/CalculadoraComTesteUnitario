@@ -2,6 +2,12 @@ var numero1 = document.getElementById('numero1');
 var numero2 = document.getElementById('numero2');
 var resultadoDoCalculo = document.getElementById('resultadoDoCalculo');
 
+function limparCalculo() {
+    resultadoDoCalculo.innerHTML='';
+    numero1.focus();
+};
+
+
 
 function soma(a, b) {
     var a = Number(numero1.value);

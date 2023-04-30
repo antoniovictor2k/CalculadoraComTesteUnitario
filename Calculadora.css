@@ -28,6 +28,74 @@ h1 {
 }
 
 .butoesCalculadora {
-    border: solid 1px #ff0000;
+    /* border: solid 1px #ff0000; */
     width: 350px;
+}
+.telaResultado{
+    background-color: #01080f;
+    height: 100px;
+    border: solid;
+    border-radius: 12px;
+    border-bottom: solid 1px #fff;
+    margin-bottom: 12px;
+}
+.telaResultado p{
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.7em;
+    padding-left: 10px;
+}
+.telaResultado pre{
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 8px;
+    font-size: 1.5em;
+}
+
+button{
+    background-color: #01080f;
+    color: #fff;
+    font-weight: 700;
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    margin-top: 12px;
+    border: none;
+}
+button:hover{
+    background-color: #225D70;
+    cursor: pointer;
+    border: #fff 1px solid;
+}
+.inputsCalculadora{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputsCalculadora input{
+    background-color: #225D70;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    height: 35px;
+    width: 150px;
+    margin-bottom: 16px;
+
+    border: #fff 1px solid;
+    border-radius: 8px;
+}
+input::placeholder{
+    color: #fff;
+}
+.limparResultado{
+text-align: left;
+margin-left: 8px;
+
+}
+.limparResultado button{
+    margin-top: -10px;
+    width: 30px;
+    border-radius: 5px;
 }
