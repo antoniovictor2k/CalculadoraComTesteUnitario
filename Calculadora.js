@@ -3,7 +3,7 @@ var numero2 = document.getElementById('numero2');
 var resultadoDoCalculo = document.getElementById('resultadoDoCalculo');
 
 function limparCalculo() {
-    resultadoDoCalculo.innerHTML='';
+    resultadoDoCalculo.innerHTML = '';
     numero1.focus();
 };
 
@@ -91,31 +91,32 @@ function fatorial(a, b) {
         return n
     }
 
-    console.log(calFatorial(a + b))
+    resultadoDoCalculo.innerHTML = (calFatorial(a + b));
 
 };
 
-// Não funcionando...
-
-console.log('Inincio teste numero primo');
 
 
+function numeroPrimo(a, b) {
+    var a = Number(numero1.value);
+    var b = Number(numero2.value);
 
-function numeroPrimo(num) {
-    console.log('Startando teste numero primo');
-    for (var i = 2; i < num; i++) {
-        if(num % i === 0) {
-            
-            // return false;
+    const verificadorPrimo = numero => {
+
+        if (numero < 2 || isNaN(numero)) {
+            return " Não é primo";
         }
-        
-        
-    }
-    if (true){
-        console.log('nnnnnnnn')
-    }
-    return num !== 1;  
-  }
-  console.log( numeroPrimo(1) );
 
-console.log('fim de teste numero primo');
+        for (let i = 2; i <= Math.sqrt(numero); i++) {
+
+            if (numero % i === 0) {
+                return " Não é primo";
+            }
+        }
+
+        return " É primo";
+    }
+
+    resultadoDoCalculo.innerHTML = a+b + verificadorPrimo(a + b);
+};
+
