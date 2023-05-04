@@ -120,3 +120,6 @@ function numeroPrimo(a, b) {
     resultadoDoCalculo.innerHTML = a+b + verificadorPrimo(a + b);
 };
 
+
+
+module.exports = {soma, dividir, multiplicar,subtrair, expoente, verificarImparPar, raizquadrada, fatorial, numeroPrimo};
