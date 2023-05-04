@@ -1,65 +1,65 @@
 // Mesma funçoes de Calculadora.js porem é essa é apenas para testes, sem vincúlo com html.
 
 function soma(a, b) {
- 
+
     return a + b;
-   
+
 
 };
 
 function subtrair(a, b) {
- 
-    return resultadoDoCalculo.innerHTML = a - b
+
+    return a - b
 
 };
 
 function multiplicar(a, b) {
- 
-    return resultadoDoCalculo.innerHTML = a * b
+
+    return a * b
 
 };
 
 function dividir(a, b) {
-    
+
     if (b == 0) {
         return 'Não é Possivel dividir Por 0'
     }
-    return  a / b
+    return a / b
 
 };
 
 function expoente(a, b) {
-  
-    return  a ** b
+
+    return a ** b
 
 };
 
 
 function verificarImparPar(a, b) {
- 
-   
-    if ((a+b) % 2 == 0) {
-        return (a+b) + ' é Par'
-    }
-    else if ((a+b) % 2 == 1) {
 
-        return (a+b) + " é Impar"
+
+    if ((a + b) % 2 == 0) {
+        return (a + b) + ' é Par'
+    }
+    else if ((a + b) % 2 == 1) {
+
+        return (a + b) + " é Impar"
     }
     else {
-        return (a+b)+ ' é Invalido ou não se encaixa'
+        return (a + b) + ' é Invalido ou não se encaixa'
     }
 
 
 };
 
 function raizquadrada(a, b) {
-    var raiz = Math.sqrt(a+b)
+    var raiz = Math.sqrt(a + b)
     return raiz;
 
 };
 
 function fatorial(a, b) {
- 
+
     const calFatorial = n => {
 
         if (n > 1) {
@@ -97,4 +97,4 @@ function numeroPrimo(a, b) {
 
 
 
-module.exports = {soma, dividir, multiplicar,subtrair, expoente, verificarImparPar, raizquadrada, fatorial, numeroPrimo};
+module.exports = { soma, dividir, multiplicar, subtrair, expoente, verificarImparPar, raizquadrada, fatorial, numeroPrimo };
