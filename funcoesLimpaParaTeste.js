@@ -22,7 +22,7 @@ function multiplicar(a, b) {
 function dividir(a, b) {
 
     if (b == 0) {
-        return 'Não é Possivel dividir Por 0'
+        return 'error'
     }
     return a / b
 
@@ -35,30 +35,32 @@ function expoente(a, b) {
 };
 
 
-function verificarImparPar(a, b) {
+function verificarImparPar(a) {
 
 
-    if ((a + b) % 2 == 0) {
-        return (a + b) + ' é Par'
+    if (a % 2 == 0) {
+        return 'par'
     }
-    else if ((a + b) % 2 == 1) {
+    else if (a % 2 == 1) {
 
-        return (a + b) + " é Impar"
+        return "impar"
     }
     else {
-        return (a + b) + ' é Invalido ou não se encaixa'
+        return 'error'
     }
-
 
 };
 
-function raizquadrada(a, b) {
-    var raiz = Math.sqrt(a + b)
+function raizquadrada(a) {
+    var raiz = Math.sqrt(a)
+    if (a <= 0) {
+        return 'error'
+    }
     return raiz;
 
 };
 
-function fatorial(a, b) {
+function fatorial(a) {
 
     const calFatorial = n => {
 
@@ -68,31 +70,31 @@ function fatorial(a, b) {
         return n
     }
 
-    return (calFatorial(a + b));
+    return (calFatorial(a));
 
 };
 
 
 
-function numeroPrimo(a, b) {
+function numeroPrimo(a) {
 
     const verificadorPrimo = numero => {
 
         if (numero < 2 || isNaN(numero)) {
-            return " Não é primo";
+            return false
         }
 
         for (let i = 2; i <= Math.sqrt(numero); i++) {
 
             if (numero % i === 0) {
-                return " Não é primo";
+                return false
             }
         }
 
-        return " É primo";
+        return true;
     }
 
-    return verificadorPrimo(a + b);
+    return verificadorPrimo(a);
 };
 
 
