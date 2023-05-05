@@ -45,7 +45,10 @@ function dividir(a, b) {
 function expoente(a, b) {
     var a = Number(numero1.value);
     var b = Number(numero2.value);
-    return resultadoDoCalculo.innerHTML = Math.pow(a, b);
+    if(a<0){
+        return resultadoDoCalculo.innerHTML = -(a**b)
+    }
+    return resultadoDoCalculo.innerHTML = a**b
 
 };
 
