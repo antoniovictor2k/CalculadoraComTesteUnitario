@@ -107,18 +107,18 @@ function numeroPrimo(a, b) {
     const verificadorPrimo = numero => {
 
         if (numero < 2 || isNaN(numero)) {
-            return " Não é primo";
+            return "Não é primo";
         }
 
         for (let i = 2; i <= Math.sqrt(numero); i++) {
 
             if (numero % i === 0) {
-                return " Não é primo";
+                return "Não é primo";
             }
         }
 
-        return " É primo";
+        return "É primo";
     }
 
-    resultadoDoCalculo.innerHTML = a+b + verificadorPrimo(a + b);
+    resultadoDoCalculo.innerHTML = verificadorPrimo(a + b);
 };
