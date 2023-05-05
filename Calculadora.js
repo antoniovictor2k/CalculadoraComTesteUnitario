@@ -69,15 +69,16 @@ function verificarImparPar(a, b) {
         return resultadoDoCalculo.innerHTML = somaAB + ' é Invalido ou não se encaixa'
     }
 
-
 };
 
 function raizquadrada(a, b) {
     var a = Number(numero1.value);
     var b = Number(numero2.value);
     var somaAB = a + b;
+    if( somaAB<0 ){
+        return resultadoDoCalculo.innerHTML = 'Error';
+    }
     var raiz = Math.sqrt(somaAB)
-    console.log('Durante a Impar ou Par')
     return resultadoDoCalculo.innerHTML = raiz;
 
 };
