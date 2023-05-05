@@ -32,10 +32,10 @@ assert(subtrair(-1,0)==-1,'Verificar se -1+0 é igual a -1')
 
 assert(dividir(6,2)==3,'Verificar se 6/2 é igual a 3')
 assert(dividir(81,9)==9,'Verificar se 81/9 é igual a 9')
-// assert(dividir(122,3)==40.66,'Verificar se 122/3 é igual a 40,666...') não esta reconhecendo os decimais
+assert(dividir(122,3)==40.666666666666664,'Verificar se 122/3 é igual a 40,666...') 
 assert(dividir(9,0)=='error','Verificar se 9/0 é igual a Error')
 assert(dividir(0,2)==0,'Verificar se 0/2 é igual a 0')
-// assert(dividir(2,3)==0.66,'Verificar se 2/3 é igual a 0,666…') não esta reconhecendo os decimais
+ assert(dividir(2,3)==0.6666666666666666,'Verificar se 2/3 é igual a 0,666…') 
 
 
 // Função Multiplicação
@@ -60,7 +60,7 @@ assert(expoente(3,2)==9,'Verificar se 3² é igual a 9')
 assert(expoente(5,3)==125,'Verificar se 5³ é igual a  125')
 assert(expoente(4,1)==4,'Verificar se 4¹  é igual a 4')
 assert(expoente(8,0)==1,'Verificar se 8**0 é igual a 1')
-//  assert(expoente(-2,2)==-4,'Verificar se -2**2  é igual a -4') dando erro verificar o pq depois.
+assert(expoente(-2,2)== 4,'Verificar se -2**2  é igual a -4') 
 assert(expoente(2,(-2))==0.25,'Verificar se 2**(-2)  é igual a 0,25')
 
 
@@ -70,7 +70,7 @@ assert(raizquadrada(81)==9,'Verificar se √81 é igual a  9')
 assert(raizquadrada(9)==3,'Verificar se  √9 é igual a  3')
 assert(raizquadrada(400)==20,'Verificar se  √400 é igual a 20')
 assert(raizquadrada(25)==5,'Verificar se √25 é igual a  5')
-// assert(raizquadrada(8)==2.828,'Verificar se √8 é igual a  2,828…') dando erro verificar depois...
+assert(raizquadrada(8)==2.8284271247461903,'Verificar se √8 é igual a  2,828…') 
 assert(raizquadrada(1)==1,'Verificar se  √1 é igual a 1')
 assert(raizquadrada(-2)=='error','Verificar se  √(-2) é igual a Error')
 
