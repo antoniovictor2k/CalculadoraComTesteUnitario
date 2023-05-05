@@ -45,6 +45,7 @@ function dividir(a, b) {
 function expoente(a, b) {
     var a = Number(numero1.value);
     var b = Number(numero2.value);
+    alert('ATT chegou!')
     return resultadoDoCalculo.innerHTML = (a) ** b
 
 };
