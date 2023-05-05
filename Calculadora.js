@@ -4,7 +4,8 @@ var resultadoDoCalculo = document.getElementById('resultadoDoCalculo');
 
 function limparCalculo() {
     resultadoDoCalculo.innerHTML = '';
-    numero1.focus();
+    numero1.value='';
+    numero2.value='';
 };
 
 
@@ -96,7 +97,6 @@ function fatorial(a, b) {
 };
 
 
-
 function numeroPrimo(a, b) {
     var a = Number(numero1.value);
     var b = Number(numero2.value);
@@ -119,7 +119,3 @@ function numeroPrimo(a, b) {
 
     resultadoDoCalculo.innerHTML = a+b + verificadorPrimo(a + b);
 };
-
-
-
-module.exports = {soma, dividir, multiplicar,subtrair, expoente, verificarImparPar, raizquadrada, fatorial, numeroPrimo};
