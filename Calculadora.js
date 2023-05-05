@@ -59,11 +59,11 @@ function verificarImparPar(a, b) {
     var somaAB = a + b
     console.log('Durante a Impar ou Par')
     if (somaAB % 2 == 0) {
-        return resultadoDoCalculo.innerHTML = somaAB + ' é Par'
+        return resultadoDoCalculo.innerHTML = somaAB + 'par'
     }
     else if (somaAB % 2 == 1) {
 
-        return resultadoDoCalculo.innerHTML = somaAB + " é Impar"
+        return resultadoDoCalculo.innerHTML = somaAB + "impar"
     }
     else {
         return resultadoDoCalculo.innerHTML = somaAB + ' é Invalido ou não se encaixa'
